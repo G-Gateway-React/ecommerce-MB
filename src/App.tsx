@@ -1,16 +1,18 @@
 import React from 'react'
 import Home from './pages/home/Home'
 import CssBaseline from '@mui/material/CssBaseline';
-import { Global, css } from "@emotion/react";
+import {GlobalStyle} from './style/globalStyle'
+import Catalog from './pages/catalog/Catalog';
 
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <>
+    <GlobalStyle>
       <CssBaseline />
-      <Home />
-    </>
+      {/* <Home /> */}
+      <Catalog />
+    </GlobalStyle>
   );
-}
+};
 
 export default App
