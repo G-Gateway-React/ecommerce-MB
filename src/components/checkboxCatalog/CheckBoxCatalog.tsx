@@ -1,6 +1,10 @@
 import { FormControlLabel, Checkbox } from "@mui/material";
 
-const CheckBoxCatalog = () => {
+type CheckBoxCatalogProps = {
+  text: string;
+}
+
+const CheckBoxCatalog = (props: CheckBoxCatalogProps) => {
   return (
     <>
       <FormControlLabel
@@ -14,7 +18,7 @@ const CheckBoxCatalog = () => {
             }}
           />
         }
-        label={'props.label'}
+        label={props.text}
       />
     </>
   );

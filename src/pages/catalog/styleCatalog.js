@@ -2,16 +2,16 @@ import styled from "@emotion/styled";
 import { TextField } from "@mui/material";
 
 export const InputSearch = styled(TextField)`
-  background-color: #fff;
-  .MuiTextField-root {
-    background-color: #fff;
+  background-color: rgba(255, 255, 255, 1) !important;
+  opacity: 1;
+  .MuiInputBase-root-MuiFilledInput-root {
+    background-color: rgba(255, 255, 255, 1)
   }
 `;
 
 export const ImagesTops = styled.div`
   display: flex;
   flex-wrap: wrap;
-  height: 100px;
   gap: 10px;
 
   div {
