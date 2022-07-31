@@ -1,9 +1,15 @@
 import { Grid } from "@mui/material";
-import { NavbarList, Logo, SpanCounter } from "./styleNavbar";
+import { NavbarList, Logo, SpanCounter, AnchorLink } from "./styleNavbar";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import { Link } from "react-router-dom";
 
-const Navbar = (props: any) => {
+interface NavbarProps { 
+  navColor: string;
+  counterColor: string;
+}
+//: React.FC<NavbarProps>
+const Navbar = (props: NavbarProps) => {
   return (
     <Grid sx={{ margin: 0, padding: "10px 0" }} container spacing={3}>
       <Grid md={4}>
@@ -23,7 +29,11 @@ const Navbar = (props: any) => {
           <li>
             <SearchIcon /> search
           </li>
-          <li>sign in</li>
+          <li>
+            <AnchorLink color={props.navColor} to="/login">
+              sign in
+            </AnchorLink>
+          </li>
           <li>
             bag <SpanCounter color={props.counterColor}>(2)</SpanCounter>
           </li>

@@ -1,4 +1,11 @@
 import styled from "@emotion/styled";
+import { Link } from 'react-router-dom'
+
+
+export const AnchorLink = styled(Link)`
+  text-decoration: none;
+  color: ${(props) => props.color};
+`;
 
 export const NavbarList = styled.ul`
   list-style: none;

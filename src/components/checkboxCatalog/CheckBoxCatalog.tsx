@@ -11,7 +11,7 @@ const CheckBoxCatalog = (props: CheckBoxCatalogProps) => {
         control={
           <Checkbox
             sx={{
-              color: "#000",
+              color: "#D1094B",
               "&.Mui-checked": {
                 color: "#D1094B",
               },

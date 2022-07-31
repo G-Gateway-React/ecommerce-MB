@@ -20,7 +20,7 @@ import {
   ImagesShirts,
 } from "./styleCatalog";
 
-const Catalog: React.FC = () => {
+const Catalog = () => {
   return (
     <div>
       <Container>
@@ -31,12 +31,11 @@ const Catalog: React.FC = () => {
           <Grid item xs={4}>
             <Typography variant="h4">Categories</Typography>
             <FormGroup>
-              <CheckBoxCatalog text={'SHIRTS'} />
-              <CheckBoxCatalog text={'SHIRTS'} />
-              <CheckBoxCatalog text={'SHIRTS'} />
-              <CheckBoxCatalog text={'SHIRTS'} />
-              <CheckBoxCatalog text={'SHIRTS'} />
-              <CheckBoxCatalog text={'SHIRTS'} />
+              <CheckBoxCatalog text={"SHIRTS"} />
+              <CheckBoxCatalog text={"SHIRTS"} />
+              <CheckBoxCatalog text={"SHIRTS"} />
+              <CheckBoxCatalog text={"SHIRTS"} />
+              <CheckBoxCatalog text={"SHIRTS"} />
             </FormGroup>
             <Typography variant="h5">FILTERS</Typography>
           </Grid>
@@ -46,11 +45,9 @@ const Catalog: React.FC = () => {
               label="Search..."
               type="search"
               variant="filled"
-              sx={{
-                bgColor: "red"
-              }}
               fullWidth={true}
               InputProps={{
+                style: { backgroundColor: "white" },
                 endAdornment: (
                   <InputAdornment position="start">
                     <IconButton>
