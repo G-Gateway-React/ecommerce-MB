@@ -2,7 +2,6 @@ import { Grid } from "@mui/material";
 import { NavbarList, Logo, SpanCounter, AnchorLink } from "./styleNavbar";
 import SearchIcon from "@mui/icons-material/Search";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
-import { Link } from "react-router-dom";
 
 interface NavbarProps { 
   navColor: string;
