@@ -4,6 +4,7 @@ import Navbar from "../../components/navbar/Navbar";
 import { FormSection, ButtonForm } from "./loginStyle";
 import Input from "../../components/input/Input";
 import CheckBoxCatalog from "../../components/checkboxCatalog/CheckBoxCatalog";
+import {AnchorLink} from '../../components/navbar/styleNavbar'
 
 const Login: React.FC = () => {
   return (
@@ -18,9 +19,12 @@ const Login: React.FC = () => {
           <form>
             <Input type="email" placeholder="Email" />
             <Input type="password" placeholder="Password" />
-            <CheckBoxCatalog text={'Remember Me'} />
+            <CheckBoxCatalog text={"Remember Me"} />
             <ButtonForm variant="contained">Login</ButtonForm>
           </form>
+          <AnchorLink color={"#d1094b"} to="/signup">
+            I don't have an account
+          </AnchorLink>
         </FormSection>
       </Container>
     </div>
