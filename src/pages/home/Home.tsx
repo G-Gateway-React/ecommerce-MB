@@ -1,12 +1,13 @@
 import React from "react";
 import Hero from "../../components/hero/Hero";
+import {HeroSection} from './styleHome'
 
 
 const Home = () => {
   return (
-    <section>
+    <HeroSection>
         <Hero />
-    </section>
+    </HeroSection>
   );
 };
 
