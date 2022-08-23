@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ce11ed6-4618-4600-acc1-20743933635b" name="Changes" comment="Edit Product Page" />
+    <list default="true" id="6ce11ed6-4618-4600-acc1-20743933635b" name="Changes" comment="Edit Product Page">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Acordinate/Acordinate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Acordinate/Acordinate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button/styleButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button/styleButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Complete_Look/Complete_Look.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Complete_Look/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Complete_Look/styleComplete_Look.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Complete_Look/styleComplete_Look.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Gallery/Gallery.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Gallery/Gallery.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Signup-Form/Signup-Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignupForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Signup-Form/styleSignup-Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SignupForm/styleSignupForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Swiper/Swiper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Swiper/Swiper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Swiper/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Swiper/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Swiper/styleSwiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Swiper/styleSwiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Product/Product.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Product/Product.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +96,11 @@
       <workItem from="1660493282155" duration="593000" />
       <workItem from="1660557395662" duration="5294000" />
       <workItem from="1660631393424" duration="2120000" />
+      <workItem from="1661155205229" duration="476000" />
+      <workItem from="1661156665449" duration="25000" />
+      <workItem from="1661156767860" duration="834000" />
+      <workItem from="1661158730588" duration="1044000" />
+      <workItem from="1661236255138" duration="8614000" />
     </task>
     <task id="LOCAL-00001" summary="Edit Product Page">
       <created>1660635169497</created>

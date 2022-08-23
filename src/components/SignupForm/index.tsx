@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import {Container} from "@mui/material";
-import {Pargraph, Title} from "./styleSignup-Form";
+import {Pargraph, Title} from "./styleSignupForm";
 
 export default function BasicTextFields() {
     return (

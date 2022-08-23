@@ -1,10 +1,9 @@
 import CustomizedAccordions from "../../components/Acordinate/Acordinate";
 import {Container, Grid} from "@mui/material";
-import {CompleteLook} from "../../components/Complete_Look/Complete_Look";
+import {CompleteLook} from "../../components/Complete_Look";
 import {Gallery} from "../../components/Gallery/Gallery";
-import BasicTextFields from "../../components/Signup-Form/Signup-Form";
+import BasicTextFields from "../../components/SignupForm";
 import Slider from "../../components/Swiper/Swiper";
-
 
 const Product = () => {
     return (
