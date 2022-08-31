@@ -6,7 +6,7 @@ import Hero from "../../components/hero/Hero";
 const Home = () => {
   return (
     <section>
-        {/* <Hero /> */}
+        <Hero />
         <Categories />
     </section>
   );
