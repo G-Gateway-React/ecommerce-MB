@@ -6,12 +6,12 @@ import {HeroSection} from './styleHome'
 
 const Home = () => {
   return (
-
-    <HeroSection>
-      <Hero />
+    <>
+      <HeroSection>
+        <Hero />
+      </HeroSection>
       <Categories />
-    </HeroSection>
-
+    </>
   );
 };
 
