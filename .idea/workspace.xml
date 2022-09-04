@@ -63,9 +63,14 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;F:/ecommerce-mb&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;ts.external.directory.path&quot;: &quot;F:\\ecommerce-mb\\node_modules\\typescript\\lib&quot;,
+=======
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\moath\\Desktop\\ecommerce-mb\\node_modules\\typescript\\lib&quot;,
+>>>>>>> a49dd779363c1421e31e2a439e9376f4e55cf734
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -78,6 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1658738345730</updated>
       <workItem from="1658738381114" duration="38000" />
+<<<<<<< HEAD
       <workItem from="1658822549173" duration="1288000" />
       <workItem from="1658830938895" duration="503000" />
       <workItem from="1658906218451" duration="6040000" />
@@ -101,6 +107,11 @@
       <workItem from="1661156767860" duration="834000" />
       <workItem from="1661158730588" duration="1044000" />
       <workItem from="1661236255138" duration="8614000" />
+=======
+      <workItem from="1658910415520" duration="4669000" />
+      <workItem from="1659209727079" duration="13000" />
+      <workItem from="1659254707943" duration="25000" />
+>>>>>>> a49dd779363c1421e31e2a439e9376f4e55cf734
     </task>
     <task id="LOCAL-00001" summary="Edit Product Page">
       <created>1660635169497</created>
@@ -126,8 +137,11 @@
       </map>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Edit Product Page" />
     <option name="LAST_COMMIT_MESSAGE" value="Edit Product Page" />
   </component>
+=======
+>>>>>>> a49dd779363c1421e31e2a439e9376f4e55cf734
 </project>
