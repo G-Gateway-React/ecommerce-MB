@@ -5,7 +5,7 @@ export const InputSearch = styled(TextField)`
   background-color: rgba(255, 255, 255, 1) !important;
   opacity: 1;
   .MuiInputBase-root-MuiFilledInput-root {
-    background-color: rgba(255, 255, 255, 1)
+    background-color: rgba(255, 255, 255, 1);
   }
 `;
 
@@ -18,8 +18,8 @@ export const ImagesTops = styled.div`
     position: relative;
     width: 32%;
     overflow: hidden;
-    &:hover .overlay{
-        height: 98%;
+    &:hover .overlay {
+      height: 98%;
     }
     img {
       width: 100%;
@@ -83,8 +83,36 @@ export const Overlay = styled.span`
 `;
 
 export const ImagesShirts = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+  img {
+    width: 32%;
+  }
+`;
+
+export const Paginations = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  ul {
+    li {
+      button[aria-current="true"] {
+        background: #d1094b;
+        color: #fff;
+      }
+    }
+  }
+`;
 
 
-`
-
-
+export const Sliders = styled.div`
+  span {
+    span:not(:first-of-type) {
+      background: #d1094b;
+      border: 1px solid #d1094b;
+    }
+  }
+`;
