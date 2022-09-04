@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/Navbar";
 import { FormSection, ButtonForm } from "../login/loginStyle";
 import Input from "../../components/input/Input";
 import CheckBoxCatalog from "../../components/checkboxCatalog/CheckBoxCatalog";
-import { Link } from "react-router-dom";
+import { AnchorLink } from "../../components/navbar/styleNavbar";
 
 const Signup = () => {
   return (
@@ -23,7 +23,9 @@ const Signup = () => {
             <CheckBoxCatalog text={"Remember Me"} />
             <ButtonForm variant="contained">Login</ButtonForm>
           </form>
-          <Link to='/login'>I have an account</Link>
+          <AnchorLink color={"#d1094b"} to="/signup">
+            I have an account
+          </AnchorLink>
         </FormSection>
       </Container>
     </div>
