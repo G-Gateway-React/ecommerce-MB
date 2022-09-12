@@ -5,10 +5,14 @@ import Hero from "../../components/hero/Hero";
 
 const Home = () => {
   return (
+    <>
     <section>
         <Hero />
-        <Categories />
     </section>
+    <section>
+      <Categories />
+    </section>
+    </>
   );
 };
 
