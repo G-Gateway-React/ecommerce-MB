@@ -4,10 +4,11 @@ import axios from 'axios';
 type Nullable<T> = T | null
 
 interface State  {
-    user : Nullable<String>
-    token : Nullable<String>
+    user : Nullable<string>
+    token : Nullable<string>
     loading : boolean
 }
+
 const initialState : State = {
     user : null ,
     token : null ,
@@ -35,7 +36,6 @@ export const getUser  = createAsyncThunk<
         } = await axios.post(`https://pro-commerce1.herokuapp.com/api/v1/signup`,
             {name, email, password});
 
-    })
 
     console.log({
         token,
@@ -64,7 +64,7 @@ export const getUser  = createAsyncThunk<
     }
 }
 });
-})
+
 
 export  const postUser = createSlice({
     name : 'userSignUp' ,
