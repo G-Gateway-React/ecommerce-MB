@@ -18,11 +18,14 @@ export const ImagesTops = styled.div`
     position: relative;
     width: 32%;
     overflow: hidden;
+    height: 309px;
     &:hover .overlay {
-      height: 98%;
+      height: 100%;
     }
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 `;
@@ -106,7 +109,6 @@ export const Paginations = styled.div`
     }
   }
 `;
-
 
 export const Sliders = styled.div`
   span {

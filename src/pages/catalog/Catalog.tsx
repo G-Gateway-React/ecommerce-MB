@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Grid,
@@ -21,19 +21,84 @@ import {
   Paginations,
   Sliders,
 } from "./styleCatalog";
-
+import axios from "axios";
+import { baseUrl, token } from "../../api";
+import CategoryImage from "../../components/categoryImages/CategoryImage";
 
 function valuetext(value: number) {
   return `${value}°C`;
 }
 
+interface CategoryType {
+  id: string;
+  title: string;
+}
+
+interface ProductsType {
+  id: string;
+  price: string;
+  images: {
+    url: string;
+  };
+}
+
 const Catalog = () => {
+  const [value, setValue] = useState<number[]>([20, 37]);
+  const [categories, setCategories] = useState<CategoryType[]>([]);
+  const [products, setProducts] = useState<ProductsType[]>([]);
 
-    const [value, setValue] = useState<number[]>([20, 37]);
+  const handleChange = (event: Event, newValue: number | number[]) => {
+    setValue(newValue as number[]);
+  };
 
-    const handleChange = (event: Event, newValue: number | number[]) => {
-      setValue(newValue as number[]);
-    };
+  const fetchCategory = async () => {
+    return await axios
+      .get<CategoryType[]>(`${baseUrl}/category`, {
+        headers: {
+          Authorization: token,
+        },
+      })
+      .then((res) => {
+        setCategories(res.data);
+        return res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const fetchProducts = async () => {
+    return await axios
+      .get(
+        `${baseUrl}/product?page=0&perPage=10&price[from]=20&price[to]=100`,
+        {
+          headers: {
+            Authorization: token,
+          },
+        }
+      )
+      .then((res) => {
+        setProducts(res.data.data);
+        // console.log(res.data.data);
+        return res.data;
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  const categoriesList = categories.map((item) => {
+    return <CheckBoxCatalog key={item.id} text={item.title} />;
+  });
+
+  const productsList = products.map((item) => {
+    return <ImagesTopsCatalog price={item.price} img={item.images} />;
+  });
+
+  useEffect(() => {
+    fetchCategory();
+    fetchProducts();
+  }, []);
   return (
     <div>
       <Container>
@@ -44,11 +109,12 @@ const Catalog = () => {
           <Grid item xs={4}>
             <Typography variant="h4">Categories</Typography>
             <FormGroup>
+              {/* <CheckBoxCatalog text={"SHIRTS"} />
               <CheckBoxCatalog text={"SHIRTS"} />
               <CheckBoxCatalog text={"SHIRTS"} />
               <CheckBoxCatalog text={"SHIRTS"} />
-              <CheckBoxCatalog text={"SHIRTS"} />
-              <CheckBoxCatalog text={"SHIRTS"} />
+              <CheckBoxCatalog text={"SHIRTS"} /> */}
+              {categoriesList}
             </FormGroup>
             <Typography variant="h5">FILTERS</Typography>
             <Sliders>
@@ -83,11 +149,12 @@ const Catalog = () => {
               TOPS
             </Typography>
             <ImagesTops>
+              {/* <ImagesTopsCatalog />
               <ImagesTopsCatalog />
               <ImagesTopsCatalog />
               <ImagesTopsCatalog />
-              <ImagesTopsCatalog />
-              <ImagesTopsCatalog />
+              <ImagesTopsCatalog /> */}
+              {productsList}
             </ImagesTops>
             <ImagesShirts style={{ margin: "30px 0 10px 0" }}>
               <Typography variant="h5">SHIRTS</Typography>
