@@ -22,7 +22,7 @@ import {
   Sliders,
 } from "./styleCatalog";
 import axios from "axios";
-import { baseUrl, token } from "../../api";
+import { baseUrl, token } from "../../API";
 import CategoryImage from "../../components/categoryImages/CategoryImage";
 
 function valuetext(value: number) {
