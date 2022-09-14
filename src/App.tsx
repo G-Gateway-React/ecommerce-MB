@@ -20,6 +20,7 @@ const App: React.FC = () => {
         <Route path='/catalog' element={<Catalog />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/product' element={<Product />} />
       </Routes>
       <Footer />
     </GlobalStyle>
