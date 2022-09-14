@@ -1,17 +1,16 @@
 import React from "react";
 import Categories from "../../components/categories/CategoriesPic";
 import Hero from "../../components/hero/Hero";
+import {HeroSection} from './styleHome'
 
 
 const Home = () => {
   return (
     <>
-    <section>
+      <HeroSection>
         <Hero />
-    </section>
-    <section>
+      </HeroSection>
       <Categories />
-    </section>
     </>
   );
 };

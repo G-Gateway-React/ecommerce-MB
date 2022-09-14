@@ -11,9 +11,9 @@ import { HeroH1,
 
 const Hero = () => {
   return (
-      <HeroSection>
-      <Container sx={{margin: '0 auto'}}>
-        <Navbar />
+    <HeroSection>
+      <Container sx={{ margin: "0 auto" }}>
+        <Navbar navColor={"#fff"} counterColor={"#fff"} />
       </Container>
       <Container sx={{display: 'flex',
     justifyContent: 'center',
